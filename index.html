@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Photo Gallery</h1>
+    <div class="gallery">
+        <figure onclick="openLightbox('images/caybuoichieu.jpg', 'Cây Buổi Chiều')">
+            <img src="images/caybuoichieu.jpg" alt="Cây Buổi Chiều">
+            <figcaption>Cây Buổi Chiều</figcaption>
+        </figure>
+        <figure onclick="openLightbox('images/conduong.jpg', 'Con Đường')">
+            <img src="images/conduong.jpg" alt="Con Đường">
+            <figcaption>Con Đường</figcaption>
+        </figure>
+        <figure onclick="openLightbox('images/honuocvacay.jpg', 'Hồ Nước Và Cây')">
+            <img src="images/honuocvacay.jpg" alt="Hồ Nước Và Cây">
+            <figcaption>Hồ Nước Và Cây</figcaption>
+        </figure>
+        <figure onclick="openLightbox('images/nhatho.jpg', 'Nhà Thờ')">
+            <img src="images/nhatho.jpg" alt="Nhà Thờ">
+            <figcaption>Nhà Thờ</figcaption>
+        </figure>
+        <figure onclick="openLightbox('images/nhavacobuoisang.jpg', 'Nhà Và Cây Buổi Sáng')">
+            <img src="images/nhavacobuoisang.jpg" alt="Nhà Và Cây Buổi Sáng">
+            <figcaption>Nhà Và Cây Buổi Sáng</figcaption>
+        </figure>
+        <figure onclick="openLightbox('images/songbuoisang.jpg', 'Sông Buổi Sáng')">
+            <img src="images/songbuoisang.jpg" alt="Sông Buổi Sáng">
+            <figcaption>Sông Buổi Sáng</figcaption>
+        </figure>
+    </div>
+
+    <!-- Lightbox Container -->
+    <div id="lightboxContainer" class="lightbox-container" onclick="closeLightbox()">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <img id="lightboxImage" class="lightbox-image" src="" alt="">
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
